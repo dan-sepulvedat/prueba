@@ -1,0 +1,15 @@
+{% if pregunta %} 
+
+	<h2>Pregunta encontrada</h2>
+	Pregunta: {{ pregunta.descripcion }}
+	<br>
+	Fecha: {{ pregunta.fecha_publicacion }}
+	<br>
+
+	<a href="/encuestas/">Volver</a>
+
+{% else %}
+
+    <p>Sin información.</p>
+
+{% endif %}
